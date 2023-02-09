@@ -18,8 +18,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('fibonacci/<int:n>/', views.fibonacci),
-    path('progression/<int:start>/<int:count>/<int:step>/', views.progression),
+    path('fibonacci_view/<int:n>/', views.fibonacci_view),
+    path('progression_view/<int:start>/<int:count>/<int:step>/', views.progression_view),
     path('greeting/<user_name>/', views.greeting),
     path('', views.homepage),
     path('home/', views.homepage),
